@@ -1,0 +1,53 @@
+$containers: (
+  1: red,
+  2: blue,
+  3: green,
+);
+
+@mixin container-divs($startcolor) {
+  @for $i from 1 through 4 {
+    .darken-#{$i} {
+      background-color: darken($startcolor, $i * $i);
+    }
+    .lighten-#{$i} {
+      background-color: lighten($startcolor, $i * $i);
+    }
+  }
+}
+
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.containers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+@each $number, $color in $containers {
+  .container-#{$number} {
+    display: flex;
+    gap: 5px;
+    color: white;
+    .box {
+      width: 100px;
+      height: 50px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .base-color {
+      background-color: $color;
+    }
+    @include container-divs($color);
+  }
+}

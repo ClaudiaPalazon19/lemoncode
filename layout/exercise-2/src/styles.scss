@@ -1,0 +1,30 @@
+@import "./theme-b.scss";
+
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.container-themes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.color-div {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.margin-top {
+  margin-top: 16px;
+}

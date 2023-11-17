@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+
+.card {
+  display: grid;
+  background-color: white;
+  grid-template-columns: 300px;
+  grid-template-rows: auto;
+  .photo {
+    width: 100%;
+  }
+  .content {
+    padding: 16px;
+    .title {
+      margin-top: 0px;
+    }
+    .published {
+      display: flex;
+      justify-content: end;
+      .datePublish {
+        margin-left: 8px;
+        color: green;
+      }
+    }
+    .moreInfo {
+      width: 100%;
+      padding: 8px;
+      background-color: green;
+      color: white;
+      border: none;
+    }
+  }
+}

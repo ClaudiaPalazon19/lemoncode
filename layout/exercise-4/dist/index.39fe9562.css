@@ -1,0 +1,53 @@
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.card {
+  background-color: #fff;
+  grid-template-rows: auto;
+  grid-template-columns: 300px;
+  display: grid;
+}
+
+.card .photo {
+  width: 100%;
+}
+
+.card .content {
+  padding: 16px;
+}
+
+.card .content .title {
+  margin-top: 0;
+}
+
+.card .content .published {
+  justify-content: end;
+  display: flex;
+}
+
+.card .content .published .datePublish {
+  color: green;
+  margin-left: 8px;
+}
+
+.card .content .moreInfo {
+  color: #fff;
+  background-color: green;
+  border: none;
+  width: 100%;
+  padding: 8px;
+}
+
+/*# sourceMappingURL=index.39fe9562.css.map */
