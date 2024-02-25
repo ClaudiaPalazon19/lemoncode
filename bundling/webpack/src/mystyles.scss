@@ -1,0 +1,27 @@
+$purple-color: #b8b8ff;
+$white-color: #f8f7ff;
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.principal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: $purple-color;
+  position: relative;
+}
+
+.principal-text {
+  text-align: center;
+  color: $white-color;
+}
+
+img {
+  width: 200px;
+}
